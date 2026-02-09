@@ -153,7 +153,7 @@ export default function FileExplorerDocsPage() {
             </Button>
             <Button variant="ghost" size="icon" className="size-8" asChild>
               <a
-                href="https://github.com"
+                href="https://github.com/alaminrifat/treecn"
                 target="_blank"
                 rel="noopener noreferrer"
               >

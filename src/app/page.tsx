@@ -70,7 +70,7 @@ export default function HomePage() {
             </Button>
             <Button variant="ghost" size="icon" className="size-8" asChild>
               <a
-                href="https://github.com"
+                href="https://github.com/alaminrifat/treecn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -107,7 +107,7 @@ export default function HomePage() {
               </Button>
               <Button variant="outline" asChild>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/alaminrifat/treecn"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -246,7 +246,7 @@ export default function HomePage() {
           </div>
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
             <a
-              href="https://github.com"
+              href="https://github.com/alaminrifat/treecn"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-foreground transition-colors"

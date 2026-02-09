@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://treecn.vercel.app"),
   title: "TreeCN - Tree View Components for shadcn/ui",
   description:
     "Beautiful, accessible tree view and file explorer components built with shadcn/ui. Composable, keyboard-navigable, and fully customizable.",
