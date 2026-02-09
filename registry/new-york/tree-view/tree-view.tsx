@@ -391,7 +391,7 @@ const TreeItem = React.forwardRef<HTMLLIElement, TreeItemProps>(
           {/* Nested children */}
           {isBranch && isExpanded && (
             <DepthContext.Provider value={depth + 1}>
-              <ul role="group" className="relative">
+              <ul role="group" className="relative flex flex-col">
                 {indicator && (
                   <div
                     className="absolute top-0 bottom-0 w-px bg-border"
