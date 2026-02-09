@@ -1,0 +1,61 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "treecn",
+  "homepage": "https://treecn.vercel.app",
+  "items": [
+    {
+      "name": "tree-view",
+      "type": "registry:component",
+      "title": "Tree View",
+      "description": "A composable, accessible tree view component with expand/collapse, single & multi-select, keyboard navigation, and indent guide lines. Build collapsible hierarchical structures like file trees, navigation menus, and nested lists.",
+      "dependencies": ["class-variance-authority", "lucide-react"],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/new-york/tree-view/tree-view.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "file-explorer",
+      "type": "registry:component",
+      "title": "File Explorer",
+      "description": "A pre-styled file/folder tree component with automatic file-type icons, color-coded extensions, built-in search/filter, and scroll area. Render file system structures from data with zero configuration.",
+      "dependencies": ["class-variance-authority", "lucide-react"],
+      "registryDependencies": ["input", "scroll-area", "tree-view"],
+      "files": [
+        {
+          "path": "registry/new-york/tree-view/file-explorer.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tree-view-demo",
+      "type": "registry:example",
+      "title": "Tree View Demo",
+      "description": "An example showing how to use the TreeView component with folders, files, actions, and keyboard navigation.",
+      "registryDependencies": ["tree-view", "button"],
+      "files": [
+        {
+          "path": "registry/new-york/examples/tree-view-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    },
+    {
+      "name": "file-explorer-demo",
+      "type": "registry:example",
+      "title": "File Explorer Demo",
+      "description": "An example showing how to use the FileExplorer component with sample file data and search.",
+      "registryDependencies": ["file-explorer"],
+      "files": [
+        {
+          "path": "registry/new-york/examples/file-explorer-demo.tsx",
+          "type": "registry:example"
+        }
+      ]
+    }
+  ]
+}

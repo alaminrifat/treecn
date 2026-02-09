@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "file-explorer-demo",
+  "title": "File Explorer Demo",
+  "description": "An example showing how to use the FileExplorer component with sample file data and search.",
+  "registryDependencies": [
+    "file-explorer"
+  ],
+  "files": [
+    {
+      "path": "registry/new-york/examples/file-explorer-demo.tsx",
+      "content": "\"use client\"\n\nimport {\n  FileExplorer,\n  type FileNode,\n} from \"@/registry/new-york/tree-view/file-explorer\"\n\nconst sampleData: FileNode[] = [\n  {\n    id: \"src\",\n    name: \"src\",\n    type: \"folder\",\n    children: [\n      {\n        id: \"app\",\n        name: \"app\",\n        type: \"folder\",\n        children: [\n          { id: \"page.tsx\", name: \"page.tsx\", type: \"file\" },\n          { id: \"layout.tsx\", name: \"layout.tsx\", type: \"file\" },\n          { id: \"globals.css\", name: \"globals.css\", type: \"file\" },\n          {\n            id: \"docs\",\n            name: \"docs\",\n            type: \"folder\",\n            children: [\n              { id: \"docs-page.tsx\", name: \"page.tsx\", type: \"file\" },\n            ],\n          },\n        ],\n      },\n      {\n        id: \"components\",\n        name: \"components\",\n        type: \"folder\",\n        children: [\n          {\n            id: \"ui\",\n            name: \"ui\",\n            type: \"folder\",\n            children: [\n              { id: \"button.tsx\", name: \"button.tsx\", type: \"file\" },\n              { id: \"card.tsx\", name: \"card.tsx\", type: \"file\" },\n              { id: \"input.tsx\", name: \"input.tsx\", type: \"file\" },\n              { id: \"badge.tsx\", name: \"badge.tsx\", type: \"file\" },\n            ],\n          },\n        ],\n      },\n      {\n        id: \"lib\",\n        name: \"lib\",\n        type: \"folder\",\n        children: [{ id: \"utils.ts\", name: \"utils.ts\", type: \"file\" }],\n      },\n    ],\n  },\n  {\n    id: \"public\",\n    name: \"public\",\n    type: \"folder\",\n    children: [\n      { id: \"favicon.ico\", name: \"favicon.ico\", type: \"file\" },\n      { id: \"og-image.png\", name: \"og-image.png\", type: \"file\" },\n    ],\n  },\n  { id: \"package.json\", name: \"package.json\", type: \"file\" },\n  { id: \"tsconfig.json\", name: \"tsconfig.json\", type: \"file\" },\n  { id: \"README.md\", name: \"README.md\", type: \"file\" },\n  { id: \"next.config.ts\", name: \"next.config.ts\", type: \"file\" },\n]\n\nexport default function FileExplorerDemo() {\n  return (\n    <FileExplorer\n      data={sampleData}\n      showSearch\n      defaultExpanded={[\"src\", \"app\"]}\n      selectionMode=\"single\"\n      className=\"w-72\"\n      wrapperClassName=\"w-72 rounded-md border bg-card p-2\"\n      maxHeight=\"350px\"\n    />\n  )\n}\n",
+      "type": "registry:example"
+    }
+  ],
+  "type": "registry:example"
+}
